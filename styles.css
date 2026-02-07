@@ -2,14 +2,13 @@ body {
   font-family: "Merriweather", "Georgia", serif;
   margin: 0;
   padding: 0;
-  align-items: center;
 }
 
 nav {
   margin: 8px 32px 32px 32px;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0.5rem;
   border-bottom: 1px solid goldenrod;
@@ -26,35 +25,36 @@ ul {
 
 li {
   padding: 10px;
-  margin-right: 10px;
 }
+
 li a {
   text-decoration: none;
   color: black;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+li a:hover {
+  text-decoration: underline;
 }
 
 .main {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px 32px;
 }
 
 @media (min-width: 1024px) {
   .main {
     width: 60%;
+    margin: 0 auto;
   }
   body {
     font-size: large;
   }
 
-  nav {
+  /* nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
-  }
+  } */
 }
